@@ -8,20 +8,7 @@ function App() {
   const [avatars, setAvatars] = useState([])
   const [searchfield, setSearchfield] = useState('')
 
-  useEffect( () => {
-   fetch('https://jsonplaceholder.typicode.com/users')
-   .then(response => response.json())
-   .then(users => setAvatars(users));    
-  },[])
 
-  const onSearchChange = (event) => {
-    setSearchfield(event.target.value);
-  }
-
-
-  const filterAvtars = avatars.filter(Avatar => {
-      return Avatar.name.toLowerCase().includes(searchfield.toLowerCase());
-    })
 
  
     if(avatars.length === 0){
