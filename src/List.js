@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card';
 
-
 const List =({Avatar}) => {
   if (Avatar.length>0)
   {
@@ -15,7 +14,6 @@ const List =({Avatar}) => {
                 name= {Avatar[i].name}
                 />
                 );
-
            }
           )
 
@@ -24,7 +22,6 @@ const List =({Avatar}) => {
 
    );
   }
-
 
   else {
   return(
