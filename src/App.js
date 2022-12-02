@@ -17,13 +17,12 @@ function App() {
    const onSearchChange = (event) => {
      setSearchfield(event.target.value);
    }
- 
- 
-   const filterAvtars = avatars.filter(Avatar => {
-       return Avatar.name.toLowerCase().includes(searchfield.toLowerCase());
-     })
 
- 
+  
+   const filterAvtars = avatars.filter(Avatar => {
+    return Avatar.name.toLowerCase().includes(searchfield.toLowerCase());
+  })
+  
     if(avatars.length === 0){
         return <h1> Loading </h1>
      }
